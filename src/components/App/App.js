@@ -7,6 +7,7 @@ import { getHasInitialized } from '../../reducers/global.reducer';
 import Home from '../Home';
 import Editor from '../Editor';
 import Docs from '../Docs';
+import DolphinGame from '../DolphinGame';
 import DevTools from '../DevTools';
 import GlobalStyles from '../GlobalStyles';
 import LoadingScreen from '../LoadingScreen';
@@ -23,6 +24,7 @@ const App = ({ hasInitialized }) => {
       <Router>
         <Route exact path="/" component={Home} />
         <Route path="/edit/:songId/:difficulty" component={Editor} />
+        <Route path="/dolphin-game" component={DolphinGame} />
         <Route path="/docs" component={Docs} />
       </Router>
       <DevTools />
